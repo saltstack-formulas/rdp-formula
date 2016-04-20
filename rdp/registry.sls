@@ -18,7 +18,6 @@ rdp-nla-registry:
     - vname: UserAuthentication
     - vdata: {{ lookup.registry.get(rdp.nla_enabled) }}
     - vtype: REG_DWORD
-    - reflection: False
 
 {##
   Changing the TCP port number requires a system restart. 
@@ -31,5 +30,3 @@ rdp-port-registry:
     - vname: PortNumber
     - vdata: {{ rdp.tcp_port }}
     - vtype: REG_DWORD
-    - reflection: False
-
